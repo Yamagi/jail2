@@ -19,6 +19,4 @@ NO_INSTALL=	yes
 
 USE_RC_SUBR=	jail2
 
-PORTDOCS=	*
-
 .include <bsd.port.mk>
