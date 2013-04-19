@@ -1,9 +1,4 @@
-# New ports collection makefile for:	jail2
-# Date created:	   21 October 2012
-# Whom:		   Yamagi Burmeister <yamagi@yamagi.org>
-#
 # $FreeBSD$
-#
 
 PORTNAME=	jail2
 PORTVERSION=	1.0
