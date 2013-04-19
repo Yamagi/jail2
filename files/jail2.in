@@ -31,6 +31,8 @@ jail2_start()
 {
 	echo -n "Starting jails: "
 
+	devfs_init_rulesets
+
 	for _j in ${jail2_list}; do
 		echo -n "${_j} "
 
