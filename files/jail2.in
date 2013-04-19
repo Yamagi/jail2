@@ -12,7 +12,7 @@
 # To manage ZFS datasets within a jail the dataset must have
 # set the parameter "jailed" to 1. Additionally the jail must
 # have set the proberties "allow.mount", "allow.mount.zfs"
-# and "enforce_statfs" to value lesser than 2.
+# and "enforce_statfs" to 0.
 
 # PROVIDE: jail
 # REQUIRE: LOGIN cleanvar
