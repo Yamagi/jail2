@@ -50,7 +50,6 @@ jail2_start()
 			for _ds in ${_zfs}; do
 				_jailed=`zfs get -H jailed ${_ds} 2>/dev/null | awk '{ print $3 }'`
 				if [ "${_jailed}" = "on" ]; then
-					echo "zfs jail "${_jid}" ${_ds} 2>/dev/null"
 					zfs jail "${_jid}" ${_ds} 2>/dev/null
 				fi
 			done
@@ -82,7 +81,6 @@ jail2_stop()
 			for _ds in ${_zfs}; do
 				_jailed=`zfs get -H jailed ${_ds} 2>/dev/null | awk '{ print $3 }'`
 				if [ "${_jailed}" = "on" ]; then
-					echo "zfs unjail "${_jid}" ${_ds} 2>/dev/null"
 					zfs unjail "${_jid}" ${_ds} 2>/dev/null
 				fi
 			done
