@@ -41,7 +41,7 @@ jail2_start()
 			continue
 		fi
 
-		jail -c -i -J /var/run/jail_${_j}.id ${_j} > /dev/null 2>&1
+		jail -c -i -J /var/run/jail_${_j}.id ${_j} > /dev/null
 
 		eval _zfs=\"\${jail2_${_j}_zfs:-}\"
 		_jid=`jls -j ${_j} jid 2>/dev/null`
